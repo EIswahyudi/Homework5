@@ -8,14 +8,16 @@ function buildRows() {
     for (var i = 0; i < timeSchedule.length; i++) {
     //build table row 
         var tRow = $("<tr class='row'>");
-    //build table data 
+    //build table data inside tRow (time, text, and save button)
         var tData = $("<td>").text(timeSchedule[i]);
         var button = $("<button class='saveBtn'>").text("Save");
         var textInput = $("<input type='text'>");
+    // stored userinput inside text 
         var storedItem = localStorage.getItem(timeSchedule[i]);
         if (storedItem !== null) {
             textInput.val(storedItem);
         }
+    // populate row, time, textbox, and save button on window
         tData.append(textInput);
         tData.append(button);
         tRow.append(tData);
