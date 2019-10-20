@@ -41,14 +41,6 @@ var curDay = moment().format('MMMM Do YYYY, h:mm:ss a');
     
     })
 
-    // d. Change row styles (function updateRowStyle) moment.js
-    function updateRowStyle() {
-
-        //TODO - finish 
-        // i. on page load, check current time (hour) against rows in scheduler 
-
-
-    }
 
 
 
